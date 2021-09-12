@@ -24,5 +24,8 @@
     "gtest-adapter.debugConfig": [
         "g++ - Debug tests"
     ],
-    "gtest-adapter.supportLocation": true
+    "gtest-adapter.supportLocation": true,
+    "files.associations": {
+        "new": "cpp"
+    }
 }
