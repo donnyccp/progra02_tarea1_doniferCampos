@@ -11,8 +11,9 @@ class Envio{
     public:
     ~Envio(){}
     virtual float CalculoEnvio()=0;
-    virt
+    
 
 
 
-}
+};
+#endif
