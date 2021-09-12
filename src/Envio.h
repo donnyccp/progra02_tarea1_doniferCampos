@@ -1,12 +1,12 @@
-#ifndef Envio
-#define Envio
+#ifndef ENVIO_H
+#define ENVIO_H
 
 #include <string>
 
 class Envio{
 
     protected:
-    Envio(){}
+    Envio() { }
 
     public:
     ~Envio(){}

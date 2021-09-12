@@ -8,7 +8,7 @@ class FedEx : public Envio {
 
     float distancia;
     float peso;
-    float costo=20.00;
+    float costo=20.0;
 
     public:
     FedEx(float, float);
