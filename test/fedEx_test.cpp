@@ -5,9 +5,9 @@ namespace
 {
     TEST(FedExTests, CalculoEnvio_Test)
     {
-        FedEx fedEx{4.0, 500.0};
+        FedEx fedEx{600.0, 6.0};
         float actual = fedEx.CalculoEnvio();
-
-        EXPECT_FLOAT_EQ(20.0, actual);
+        EXPECT_FLOAT_EQ(28.0, actual);
     }
+
 }

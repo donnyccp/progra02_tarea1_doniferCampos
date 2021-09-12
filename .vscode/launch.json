@@ -8,7 +8,7 @@
             "name": "g++ - Debug program",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\obj\\clase03.exe",
+            "program": "${workspaceFolder}\\obj\\Tarea1.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
