@@ -3,59 +3,59 @@
 
 ServicioPostal::ServicioPostal(float pesoAEnviar, float kilometrosAEnviar, int claseElegida)
 {
-    peso = pesoAEnviar;
-    kilometros = kilometrosAEnviar;
-    clase = claseElegida;
+    this->peso = pesoAEnviar;
+    this->kilometros = kilometrosAEnviar;
+    this->clase = claseElegida;
 }
 
 float ServicioPostal::CalculoEnvio()
 {
-    switch (clase)
+    switch (this->clase)
     {
     case 1:
-        if (peso <= 3.0 && peso >= 1.00)
+        if (this->peso <= 3.0 && this->peso >= 1.00)
         {
-            return 0.195 * kilometros;
+            return 0.195 * this->kilometros;
         }
-        else if (peso <= 8.0 && peso >= 4.00)
+        else if (this->peso <= 8.0 && this->peso >= 4.00)
         {
-            return 0.450 * kilometros;
+            return 0.450 * this->kilometros;
         }
-        else if (peso >= 9.00)
+        else if (this->peso >= 9.00)
         {
-            return 0.500 * kilometros;
+            return 0.500 * this->kilometros;
         }
 
         break;
 
     case 2:
-        if (peso <= 3.0 && peso >= 1.00)
+        if (this->peso <= 3.0 && this->peso >= 1.00)
         {
             return 0.0195 * kilometros;
         }
-        else if (peso <= 8.0 && peso >= 4.00)
+        else if (this->peso <= 8.0 && this->peso >= 4.00)
         {
-            return 0.0450 * kilometros;
+            return 0.0450 * this->kilometros;
         }
-        else if (peso >= 9.00)
+        else if (this->peso >= 9.00)
         {
-            return 0.0500 * kilometros;
+            return 0.0500 * this->kilometros;
         }
 
         break;
 
     case 3:
-        if (peso <= 3.0 && peso >= 1.00)
+        if (this->peso <= 3.0 && this->peso >= 1.00)
         {
-            return 0.0150 * kilometros;
+            return 0.0150 * this->kilometros;
         }
-        else if (peso <= 8.0 && peso >= 4.00)
+        else if (this->peso <= 8.0 && this->peso >= 4.00)
         {
-            return 0.0160 * kilometros;
+            return 0.0160 * this->kilometros;
         }
-        else if (peso >= 9.00)
+        else if (this->peso >= 9.00)
         {
-            return 0.0170 * kilometros;
+            return 0.0170 * this->kilometros;
         }
         break;
     }
